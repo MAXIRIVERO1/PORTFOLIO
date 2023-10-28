@@ -1,0 +1,13 @@
+.fondo{
+    background-image: url("../../../fondo.jpg");
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}
+.card{
+    background-color: cadetblue;
+    border-radius: 10%;
+}
