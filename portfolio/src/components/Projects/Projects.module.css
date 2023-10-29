@@ -1,0 +1,9 @@
+.contenedor{
+    background-image: url("../../../programming.jpg");
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}

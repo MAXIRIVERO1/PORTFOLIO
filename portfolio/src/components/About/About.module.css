@@ -8,15 +8,11 @@
 
 }
 .card{
-    background-color: rgba(10, 158, 163, 0.368);
+    background-color: rgba(0, 0, 0, 0.771);
     border-radius: 10%;
     color: white;
-    width: 50%;
-    height: 70%;
-    margin-top: 90px;
-}
-.img{
-    border-radius: 10%;
-    width: 35%;
-    height: 50%;
+    width: 55%;
+    height: 90%;
+    margin-top: 20px;
+    padding: 10px;
 }
