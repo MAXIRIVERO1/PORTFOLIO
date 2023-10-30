@@ -12,6 +12,7 @@ function Home() {
         <h1>Alfredo Maximiliano Castillo(MAXI)</h1>
         <h2>Full Stack Developer💻</h2>
         <img className={style.img} src={foto} alt="" />
+        <h2>📞+543876312803</h2>
       </div>
     </div>
   )

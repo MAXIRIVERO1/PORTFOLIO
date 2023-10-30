@@ -1,9 +1,41 @@
-.contenedor{
+.back{
+    background-image: url("../../../programming.jpg");
+}
+.contenedor {
     background-image: url("../../../programming.jpg");
     width: auto;
-    height: 100vh;
-    display: flex;
+    height: 96.3vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     justify-content: center;
     justify-items: center;
-
+    align-items: center;
+    color: rgb(94, 252, 194);
+    text-align: center;
 }
+  
+.card {
+    padding: 10px;
+    background-color: rgba(7, 7, 7, 0.634);
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+  
+.card:hover {
+    transform: scale(1.1);
+    background-color: rgba(187, 3, 3, 0.5);
+}
+  
+.img {
+    border-radius: 10%;
+}
+.backButton {
+    grid-column: 1 / span 3; /* Ocupa las 3 columnas */
+    display: flex;
+    justify-content: center;
+    margin: 10px 0; /* Espacio entre el botón y las tarjetas */
+    height: 5px
+  }
