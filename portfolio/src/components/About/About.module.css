@@ -1,7 +1,11 @@
+.back{
+    background-image: url("../../../programming.jpg");
+    padding-top: 5px;
+}
 .contenedor{
     background-image: url("../../../programming.jpg");
     width: auto;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -11,8 +15,21 @@
     background-color: rgba(0, 0, 0, 0.771);
     border-radius: 10%;
     color: white;
+    font-size: 15px;
     width: 55%;
     height: 90%;
     margin-top: 20px;
     padding: 10px;
+}
+.button{
+  background-color: rgb(5, 227, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button:hover{
+  transition: 0.5s;
+  background-color: black;
+  color: rgb(5, 227, 247);
+  transform: scaleY(1.5);
+  cursor: pointer;
 }

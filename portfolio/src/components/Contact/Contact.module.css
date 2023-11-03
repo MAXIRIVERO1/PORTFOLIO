@@ -1,10 +1,22 @@
 .back{
     background-image: url("../../../programming.jpg");
+    padding-top: 5px;
 }
+.button{
+    background-color: rgb(5, 227, 247);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+.button:hover{
+    transition: 0.5s;
+    background-color: black;
+    color: rgb(5, 227, 247);
+    transform: scaleY(1.5);
+}   
 .contenedor {
     background-image: url("../../../programming.jpg");
     width: auto;
-    height: 96.3vh;
+    height: 95.2vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -33,9 +45,9 @@
     border-radius: 10%;
 }
 .backButton {
-    grid-column: 1 / span 3; /* Ocupa las 3 columnas */
+    grid-column: 1 / span 3;
     display: flex;
     justify-content: center;
-    margin: 10px 0; /* Espacio entre el botón y las tarjetas */
+    margin: 10px 0;
     height: 5px
   }

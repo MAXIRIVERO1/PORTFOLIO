@@ -1,11 +1,24 @@
-/* Estilos para el contenedor del menú hamburguesa */
+
 .burger-menu {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    
   }
+.button{
+  background-color: rgb(5, 227, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button:hover{
+  transition: 0.5s;
+  background-color: black;
+  color: rgb(5, 227, 247);
+  transform: scaleY(1.5);
+  cursor: pointer;
+}
   
-  /* Estilos para el botón de hamburguesa (menú-toggle) */
+
   .menu-toggle {
     cursor: pointer;
     display: flex;
@@ -13,34 +26,34 @@
     margin: 10px;
   }
   
-  /* Estilos para las barras de la hamburguesa (bar) */
   .bar {
     width: 30px;
     height: 3px;
     background-color: #333;
     margin: 3px 0;
-    transition: 0.4s;
+    transition: 1.4s;
+    background-color: rgb(5, 227, 247);
   }
   
-  /* Estilos para los elementos del menú (menu-items) cuando están ocultos */
   .menu-items {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 5px;
     display: none;
+    background-color: rgba(0, 0, 0, 0.53);
+    border-radius: 10px;
   }
   
-  /* Estilos para los elementos del menú cuando están abiertos (open) */
   .menu-items.open {
     display: block;
+    opacity: 1;
+    transform: scaleY(1);
   }
   
-  /* Estilos para los elementos de la lista del menú (li) */
   .menu-items li {
     margin: 10px 0;
   }
   
-  /* Estilos para las barras de la hamburguesa cuando el menú está abierto */
   .menu-toggle.open .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
   }
