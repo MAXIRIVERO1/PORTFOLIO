@@ -14,15 +14,17 @@ function Contact() {
     <div className={style.contenedor}>
       <div className={style.card}>
         <Link target="_blank" to="mailto:maximilianoa.castillorivero@gmail.com"><img className={style.img} src={gmail} alt=""/></Link><br/>
-        <a target="_blank" href="mailto:maximilianoa.castillorivero@gmail.com">Send Email</a>
+        <a className={style.text} target="_blank" href="mailto:maximilianoa.castillorivero@gmail.com">Send Email</a>
       </div>
+
       <div className={style.card}>
         <Link target="_blank" to="https://github.com/MAXIRIVERO1"><img className={style.img} src={github} alt=""/></Link><br/>
-        <a target="_blank" href="https://github.com/MAXIRIVERO1">GitHub Profile</a>
+        <a className={style.text} target="_blank" href="https://github.com/MAXIRIVERO1">GitHub Profile</a>
       </div>
+
       <div className={style.card}>
         <Link target="_blank" to="https://www.linkedin.com/in/maximiliano-developer"><img className={style.img} src={linkedin} alt=""/></Link><br/>
-        <a target="_blank" href="https://www.linkedin.com/in/maximiliano-developer">Linkedin Profile</a>
+        <a className={style.text} target="_blank" href="https://www.linkedin.com/in/maximiliano-developer">Linkedin Profile</a>
       </div>
     </div>
     </div>

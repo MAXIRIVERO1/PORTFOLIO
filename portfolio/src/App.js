@@ -6,6 +6,7 @@ import About from "./components/About/About.jsx"
 import Certificates from "./components/Certificates/Certificates.jsx"
 import Projects from "./components/Projects/Projects.jsx"
 import Contact from "./components/Contact/Contact.jsx"
+import Detail from "./components/Detail/Detail.jsx"
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
       <Route
       path="/projects"
       element={<Projects />}
+      />
+      <Route
+      path="/detail/:project"
+      element={<Detail />}
       />
      </Routes>
     </div>
