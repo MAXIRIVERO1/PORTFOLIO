@@ -2,18 +2,18 @@ const db = [
     {
       name : "FOODS",
       title : "Proyecto food",
-      description: `He tenido el logro de completar con éxito un proyecto individual, superando sus desafíos y complejidad.
+      description: `He tenido el placer de completar con éxito un proyecto individual, superando sus desafíos y complejidad.
        
       SPA (Single Page Application) que permite al usuario buscar recetas, crear una receta, poder filtrar por puntuación, tipo de dieta, al igual que ordenamiento alfabético.
       
-      Tech skills: React.js · redux · Sequelize.js · GitHub · Hojas de estilos en cascada (CSS) · Node.js · SQL · JavaScript · HTML · Express.jsHe `,
+      Tech skills: React.js · redux · Sequelize.js · GitHub · Hojas de estilos en cascada (CSS) · Node.js · SQL · JavaScript · HTML · Express.js`,
       english:{
         title: "Food Project",
-        description: `I have had the achievement of successfully completing an individual project, overcoming its challenges and complexity.
+        description: `I have had the pleasure of successfully completing an individual project, overcoming its challenges and complexity.
        
         SPA (Single Page Application) that allows the user to search for recipes, create a recipe, be able to filter by score, type of diet, as well as alphabetical order.
        
-        Tech skills: React.js · redux · Sequelize.js · GitHub · Cascading style sheets (CSS) · Node.js · SQL · JavaScript · HTML · Express.jsHe`
+        Tech skills: React.js · redux · Sequelize.js · GitHub · Cascading style sheets (CSS) · Node.js · SQL · JavaScript · HTML · Express.js`
       }
     },
     {
@@ -21,12 +21,12 @@ const db = [
       title : "Mi Portfolio",
       description : `¡Bienvenido a mi Portafolio Personal!
       En mi rincón en línea, te invito a explorar mi viaje a través del mundo de la programación y el desarrollo web. Aquí encontrarás una colección de proyectos, logros y experiencias que han moldeado mi camino como desarrollador web Full Stack.
-      ¡Gracias por visitar y ser parte de mi viaje!`,
+      Tech skills: HTML, CSS, JAVASCRIPT, REACT.`,
       english:{
         title: "My Portfolio",
         description : `Welcome to my Personal Portfolio!
         In my online corner, I invite you to explore my journey through the world of programming and web development. Here you will find a collection of projects, achievements and experiences that have shaped my path as a Full Stack web developer.
-        Thank you for visiting and being part of my journey!`
+        Tech skills: HTML, CSS, JAVASCRIPT, REACT.`
       }
     },
     {

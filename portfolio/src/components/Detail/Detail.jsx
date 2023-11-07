@@ -25,10 +25,12 @@ function Detail() {
       {lang ? <div className={style.card}>
         <h1>{found.english.title}</h1>
         <p>{found.english.description}</p>
+        <p>Thank you for visiting and being part of my journey!</p>
       </div> : 
       <div className={style.card}>
       <h1>{found.title}</h1>
       <p>{found.description}</p>
+      <p>¡Gracias por visitar y ser parte de mi viaje!</p>
       </div>
       }
     </div>
