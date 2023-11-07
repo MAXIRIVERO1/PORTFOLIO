@@ -33,7 +33,7 @@ function Home() {
         <h1>Alfredo Maximiliano Castillo(MAXI)</h1>
         <h2>Full Stack Developer💻</h2>
         <img className={style.img} src={foto} alt="" /><br/>
-        <button onClick={copyToClipboard} className={style.button}>📞+543876312803</button>
+        <button onClick={copyToClipboard} className={style.buttonCopy}>📞+543876312803</button>
       </div>
     </div>
     </div>

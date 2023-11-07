@@ -4,15 +4,24 @@
     background-image: url("../../../programming.jpg");
     padding-top: 5px;
 }
-.button{
-    background-color: rgb(5, 227, 247);
-    border-radius: 8px;
-    cursor: pointer;
-  }
+.buttonCopy{
+  background-color: rgb(5, 227, 247);
+  border-radius: 8px;
+  cursor: pointer;
+  width: 40%;
+  height: 30px;
+}
+.buttonCopy:hover{
+  transition: 0.5s;
+  background-color: black;
+  color: rgb(5, 227, 247);
+  transform: scaleY(1.5);
+  cursor: pointer;
+}
 .contenedor{
     background-image: url("../../../programming.jpg");
     width: auto;
-    height: 100vh;
+    height: 92vh;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -36,7 +45,7 @@
     .contenedor {
       background-image: url("../../../programming.jpg");
       padding: 20px; 
-      height: 80vh;
+      height: 85vh;
     }
   
     .card {
@@ -55,5 +64,10 @@
       width: 60%; 
       height: auto;
     }
+    .buttonCopy {
+      width: 96%;
+      height: 30px;
+      margin: 5px;
+  }
   }
   
