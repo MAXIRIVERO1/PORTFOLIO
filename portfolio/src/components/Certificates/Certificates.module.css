@@ -60,7 +60,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 95.5vh;
+        height: 89.5vh;
     }
 
     .card {
@@ -68,8 +68,9 @@
     }
 
     .button {
-        width: 90%;
+        width: 96%;
         height: 30px;
+        margin: 5px;
     }
     .img {
         border-radius: 10%;

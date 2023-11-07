@@ -89,11 +89,11 @@
     display: none;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
-    width: 100%; 
+    width: 150px; 
     padding-top: 40px; 
     padding-bottom: 40px;
     padding-left: 10px;
-    padding-right: 40px;
+    padding-right: 10px;
   }
 
   .menu-items.open {

@@ -44,6 +44,8 @@
   }
 
   .button {
-      width: 100%;
+      width: 96%;
+      height: 30px;
+      margin: 5px;
   }
 }
