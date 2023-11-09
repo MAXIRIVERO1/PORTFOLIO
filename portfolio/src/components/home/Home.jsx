@@ -17,10 +17,10 @@ function Home() {
 
     document.body.removeChild(input);
     Swal.fire({
-      title: '¡Muy bien!',
+      title: '¡Copied!',
       text: 'Número de teléfono copiado al portapapeles',
       icon: 'info',
-      confirmButtonText: 'Entendido',
+      confirmButtonText: 'OK',
     });
   };
   return (

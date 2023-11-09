@@ -10,7 +10,10 @@
 .button{
   background-color: rgb(5, 227, 247);
   border-radius: 8px;
+  width: 90%;
+  height: 20px;
   cursor: pointer;
+  padding-bottom: 18px;
 }
 .button:hover{
   transition: 0.5s;
