@@ -1,11 +1,11 @@
 .back{
-    background-image: url("../../../programming.jpg");
+    background-image: url("../../../programming.jpeg");
     padding-top: 5px;
 }
 .contenedor{
-    background-image: url("../../../programming.jpg");
+    background-image: url("../../../programming.jpeg");
     width: auto;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     justify-items: center;

@@ -1,7 +1,7 @@
 .menu{
     display: flex;
     justify-content: left;
-    background-image: url("../../../programming.jpg");
+    background-image: url("../../../programming.jpeg");
     padding-top: 5px;
 }
 .buttonCopy{
@@ -19,9 +19,9 @@
   cursor: pointer;
 }
 .contenedor{
-    background-image: url("../../../programming.jpg");
+    background-image: url("../../../programming.jpeg");
     width: auto;
-    height: 92vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -37,13 +37,13 @@
 }
 .img{
     border-radius: 10%;
-    width: 35%;
-    height: 55%;
+    width: 250px;
+    height: 250px;
 }
 
 @media screen and (max-width: 768px) {
     .contenedor {
-      background-image: url("../../../programming.jpg");
+      background-image: url("../../../programming.jpeg");
       padding: 20px; 
       height: 84vh;
     }

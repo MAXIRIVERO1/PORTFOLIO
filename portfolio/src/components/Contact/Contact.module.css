@@ -1,5 +1,5 @@
 .back{
-    background-image: url("../../../programming.jpg");
+    background-image: url("../../../programming.jpeg");
     padding-top: 5px;
 }
 .button{
@@ -14,9 +14,9 @@
     transform: scaleY(1.5);
 }   
 .contenedor {
-    background-image: url("../../../programming.jpg");
+    background-image: url("../../../programming.jpeg");
     width: auto;
-    height: 95.2vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
