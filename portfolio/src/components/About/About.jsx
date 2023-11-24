@@ -7,7 +7,7 @@ function About() {
   const [lang, setLang] = useState(true)
   
   const handleClick =()=>{
-    if(lang){ setLang(false)}
+    if(lang){ setLang(false) }
     else{ setLang(true)}
   }
   return (
