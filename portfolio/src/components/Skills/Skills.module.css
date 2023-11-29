@@ -2,7 +2,7 @@
   background-color: rgba(0, 0, 0, 0.679);
   width: auto;
   height: 40px;
-  padding: 20px;
+  /* padding: 20px; */
   padding-top: 28px;
 }
 .container {
@@ -52,11 +52,13 @@
 
   @media screen and (max-width: 768px) {
     .container {
-      height: 94vh;
+      height: 90vh;
+      padding-bottom: 0%;
+      margin-bottom: 0%;
     }
     .background{
       background-color: transparent;
-      padding: 5px 0px;
+      padding-top: 5px;
     }
     .button{
       width: 96%;
