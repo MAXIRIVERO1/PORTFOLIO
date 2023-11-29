@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import db from './data';
 import {Link} from "react-router-dom"
 import style from "./Detail.module.css"
+import Footer from "../Footer/Footer.jsx"
 
 function Detail() {
   const { project } = useParams();
@@ -16,7 +17,7 @@ function Detail() {
   const found = db.find((o) => o.name === project);
 
   return (
-    <div>
+    <div className={style.background}>
       <div className={style.back}>
       <Link to={"/projects"}><button className={style.button}>BACK</button></Link>
       {lang ? <button className={style.button} onClick={handleClick}>SPANISH</button> : <button className={style.button} onClick={handleClick}>ENGLISH</button>}
@@ -34,6 +35,7 @@ function Detail() {
       </div>
       }
     </div>
+    <Footer></Footer>
     </div>
   );
 }

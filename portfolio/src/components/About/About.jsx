@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import style from "./About.module.css"
 import {Link} from "react-router-dom"
+import Footer from '../Footer/Footer'
 
 
 function About() {
@@ -11,7 +12,7 @@ function About() {
     else{ setLang(true)}
   }
   return (
-    <div>
+    <div className={style.background}>
       <div className={style.back}>
       <Link to={"/"}><button className={style.button}>BACK</button></Link>
       {lang ? <button className={style.button} onClick={handleClick}>SPANISH</button> : <button className={style.button} onClick={handleClick}>ENGLISH</button>}
@@ -35,6 +36,7 @@ function About() {
       </div>
       }
     </div>
+    <Footer></Footer>
     </div>
   )
 }

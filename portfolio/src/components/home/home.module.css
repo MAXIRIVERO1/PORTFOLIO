@@ -1,8 +1,12 @@
+.background{
+  background-image: url("../../../programming.jpeg");
+}
+
 .menu{
     display: flex;
     justify-content: left;
-    background-image: url("../../../programming.jpeg");
-    padding-top: 5px;
+    background-color: rgba(0, 0, 0, 0.679);
+    padding: 20px 0px;
 }
 .buttonCopy{
   background-color: rgb(5, 227, 247);
@@ -19,7 +23,6 @@
   cursor: pointer;
 }
 .contenedor{
-    background-image: url("../../../programming.jpeg");
     width: auto;
     height: 95vh;
     display: flex;

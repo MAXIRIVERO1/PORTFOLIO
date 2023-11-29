@@ -6,10 +6,11 @@ import henry from "./henry.jpg"
 import efSet from "./efSet.jpg"
 import nodeYexpress from "./nodeYexpress.jpg"
 import mongoDB from "./mongoDB.jpg"
+import Footer from '../Footer/Footer'
 
 function Certificates() {
   return (
-    <div>
+    <div className={style.background}>
     <div className={style.back}>
     <Link to={"/"}><button className={style.button}>BACK</button></Link>
     </div>
@@ -39,6 +40,7 @@ function Certificates() {
         <a className={style.text} target="_blank" href="https://platzi.com/p/maximilianoa.castillorivero/curso/4987-mongodb/diploma/detalle/">MongoDB</a>
       </div>
     </div>
+    <Footer></Footer>
     </div>
   )
 }

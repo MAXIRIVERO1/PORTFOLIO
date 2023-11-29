@@ -1,6 +1,11 @@
+.background{
+  background-image: url("../../../programming.jpeg");
+}
+
 .back{
-    background-image: url("../../../programming.jpeg");
-    padding-top: 5px;
+  background-color: rgba(0, 0, 0, 0.679);
+  padding-top: 30px;
+  height: 60px;
 }
 .contenedor{
     background-image: url("../../../programming.jpeg");
@@ -23,6 +28,8 @@
 }
 .button{
   background-color: rgb(5, 227, 247);
+  width: 100px;
+  height: 30px;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -37,9 +44,13 @@
   .contenedor {
       flex-direction: column;
       align-items: center;
+      justify-content: flex-start;
       height: 83.5vh;
   }
-
+  .back{
+    background-color: transparent;
+    padding: 5px 0px;
+  }
   .card {
       width: 90%;
       height: auto;

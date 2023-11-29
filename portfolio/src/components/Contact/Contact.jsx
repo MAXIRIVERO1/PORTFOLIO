@@ -4,10 +4,11 @@ import {Link} from "react-router-dom"
 import gmail from "./gmail.jpg"
 import linkedin from "./linkedin.jpg"
 import github from "./github.jpg"
+import Footer from '../Footer/Footer'
 
 function Contact() {
   return (
-    <div>
+    <div className={style.background}>
     <div className={style.back}>
     <Link to={"/"}><button className={style.button}>BACK</button></Link>
     </div>
@@ -27,6 +28,7 @@ function Contact() {
         <a className={style.text} target="_blank" href="https://www.linkedin.com/in/maximiliano-developer">Linkedin Profile</a>
       </div>
     </div>
+    <Footer></Footer>
     </div>
   )
 }

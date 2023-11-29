@@ -3,6 +3,7 @@ import foto from "./maxiB&W.jpg"
 import style from "./home.module.css"
 import BurguerMenu from "../BurgerMenu/BurgerMenu"
 import Swal from 'sweetalert2';
+import Footer from "../Footer/Footer.jsx"
 
 
 function Home() {
@@ -24,7 +25,7 @@ function Home() {
     });
   };
   return (
-    <div>
+    <div className={style.background}>
       <div className={style.menu}>
       <BurguerMenu></BurguerMenu>
       </div>
@@ -36,6 +37,7 @@ function Home() {
         <button onClick={copyToClipboard} className={style.buttonCopy}>📞+543876312803</button>
       </div>
     </div>
+    <Footer></Footer>
     </div>
   )
 }

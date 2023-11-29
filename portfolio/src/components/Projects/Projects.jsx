@@ -4,11 +4,12 @@ import {Link} from "react-router-dom"
 import food from "./food.jpg"
 import portfolio from "./portfolio.jpg"
 import xul from "./xul.jpg"
+import Footer from '../Footer/Footer'
 
 
 function Projects() {
   return (
-    <div>
+    <div className={style.background}>
     <div className={style.back}>
     <Link to={"/"}><button className={style.button}>BACK</button></Link>
     </div>
@@ -30,8 +31,8 @@ function Projects() {
         <a className={style.text} target="_blank" href="https://www.youtube.com/watch?v=BGJdh_8pxvo">Check on Youtube</a><br/>
         <Link className={style.text} to={`/detail/XUL`}>Detail</Link>
       </div>
-
     </div>
+    <Footer></Footer>
     </div>
   )
 }

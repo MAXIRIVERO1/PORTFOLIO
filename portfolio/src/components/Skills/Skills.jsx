@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import skills from "./skills.js";
 import style from "./Skills.module.css";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from '../Footer/Footer.jsx';
 
 function Skills() {
   const settings = {
@@ -18,7 +18,7 @@ function Skills() {
 
   return (
     <div className={style.container}>
-      <div>
+      <div className={style.background}>
         <Link to={"/"}><button className={style.button}>BACK</button></Link>
       </div>
       <h1>Slide it!</h1>
@@ -34,6 +34,7 @@ function Skills() {
           ))}
         </Slider>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
