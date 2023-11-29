@@ -7,6 +7,7 @@
     justify-content: left;
     background-color: rgba(0, 0, 0, 0.679);
     padding: 20px 0px;
+    height: 52px;
 }
 .buttonCopy{
   background-color: rgb(5, 227, 247);
@@ -14,6 +15,7 @@
   cursor: pointer;
   width: 40%;
   height: 30px;
+  font-weight: bold;
 }
 .buttonCopy:hover{
   transition: 0.5s;

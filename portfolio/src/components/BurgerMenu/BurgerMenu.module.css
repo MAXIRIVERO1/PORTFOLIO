@@ -16,6 +16,7 @@
   padding-bottom: 3px;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 .button:hover{
   transition: 0.5s;
@@ -98,8 +99,8 @@
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     width: 150px; 
-    padding-top: 40px; 
-    padding-bottom: 40px;
+    padding-top: 10px; 
+    padding-bottom: 60px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -110,5 +111,8 @@
 
   .menu-items li {
     margin: 10px 0;
+  }
+  .button{
+    height: 40px;
   }
 }

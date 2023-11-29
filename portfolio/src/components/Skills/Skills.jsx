@@ -17,6 +17,7 @@ function Skills() {
   };
 
   return (
+    <div>
     <div className={style.container}>
       <div className={style.background}>
         <Link to={"/"}><button className={style.button}>BACK</button></Link>
@@ -34,7 +35,8 @@ function Skills() {
           ))}
         </Slider>
       </div>
-      <Footer></Footer>
+    </div>
+      <Footer className={style.footer}></Footer>
     </div>
   );
 }

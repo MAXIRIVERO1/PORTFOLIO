@@ -32,6 +32,8 @@
   height: 30px;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
+  margin: 0px 5px;
 }
 .button:hover{
   transition: 0.5s;
