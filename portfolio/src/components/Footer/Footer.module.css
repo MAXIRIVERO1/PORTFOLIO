@@ -2,12 +2,11 @@
     background-image: url("../../../programming.jpeg");
     color: rgb(5, 227, 247);
     width: auto;
-    height: 73px;
-    padding: 20px 0px;
+    height: 97px;
 }
 .blackback{
     background-color: rgba(0, 0, 0, 0.679);
     width: auto;
-    height: 53px;
-    padding: 20px;
+    height: 77px;
+    padding-top: 20px;
 }

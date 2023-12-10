@@ -38,7 +38,7 @@
     width: 30px;
     height: 3px;
     background-color: #333;
-    margin: 3px 0;
+    margin: 3px 10px;
     transition: 1.4s;
     background-color: rgb(5, 227, 247);
   }
@@ -46,10 +46,10 @@
   .menu-items {
     /* transform-style: preserve-3d;
     transition: cubic-bezier(0.23, 1, 0.320, 1); */
-    top: 40px;
-    left: 0;
+    top: 86px;
+    left: 15px;
     position: absolute;
-    list-style: none;
+    list-style: disc;
     padding: 5px;
     margin: 5px;
     display: none;
@@ -63,6 +63,7 @@
     display: block;
     opacity: 1;
     transform: scaleY(1);
+    transition: 1.5s
   }
   
   .menu-items li {
@@ -93,8 +94,8 @@
 
   .menu-items {
     position: absolute;
-    top: 40px; 
-    left: 0;
+    top: 82px; 
+    left: 10px;
     display: none;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
@@ -103,6 +104,9 @@
     padding-bottom: 60px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .bar{
+    margin-left: 20px;
   }
 
   .menu-items.open {
