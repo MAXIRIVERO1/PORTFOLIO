@@ -34,8 +34,8 @@ function Projects() {
       </div>
 
       <div className={style.card}>
-        <Link ><img className={style.img} src={comingsoon} alt="project"/></Link><br/>
-        <p className={style.text} >New project coming soon...</p><br/>
+        <Link ><img className={style.img} src={comingsoon} alt="project"/></Link>
+        <p className={style.text} >New project coming soon...</p>
       </div>
     </div>
     <Footer></Footer>
