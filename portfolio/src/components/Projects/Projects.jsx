@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 import food from "./food.jpg"
 import portfolio from "./portfolio.jpg"
 import xul from "./xul.jpg"
+import comingsoon from "./comingsoon.jpg"
 import Footer from '../Footer/Footer'
 
 
@@ -30,6 +31,11 @@ function Projects() {
         <Link target="_blank" to="https://www.youtube.com/watch?v=BGJdh_8pxvo"><img className={style.img} src={xul} alt="project"/></Link><br/>
         <a className={style.text} target="_blank" href="https://www.youtube.com/watch?v=BGJdh_8pxvo">Check on Youtube</a><br/>
         <Link className={style.text} to={`/detail/XUL`}>Detail</Link>
+      </div>
+
+      <div className={style.card}>
+        <Link ><img className={style.img} src={comingsoon} alt="project"/></Link><br/>
+        <p className={style.text} >New project coming soon...</p><br/>
       </div>
     </div>
     <Footer></Footer>
