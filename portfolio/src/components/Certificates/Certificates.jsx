@@ -16,7 +16,7 @@ function Certificates() {
     </div>
     <div className={style.contenedor}>
       <div className={style.card}>
-        <Link target="_blank" to="https://drive.google.com/file/d/1iPAbELScNElMevB7X-TbfdVKORn3UJk3/view?usp=sharing"><img className={style.img} src={CV} alt="certificate"/></Link><br/>
+        <Link target="_blank" to="https://drive.google.com/file/d/14dRnCCrS1cY6-R0KeVa8eAD8WKushycj/view?usp=sharing"><img className={style.img} src={CV} alt="certificate"/></Link><br/>
         <a className={style.text} target="_blank" href="https://drive.google.com/file/d/1iPAbELScNElMevB7X-TbfdVKORn3UJk3/view?usp=sharing">Check CV</a>
       </div>
 
