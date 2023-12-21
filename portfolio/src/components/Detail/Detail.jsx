@@ -20,7 +20,7 @@ function Detail() {
     <div className={style.background}>
       <div className={style.back}>
       <Link to={"/projects"}><button className={style.button}>BACK</button></Link>
-      {lang ? <button className={style.button} onClick={handleClick}>SPANISH</button> : <button className={style.button} onClick={handleClick}>ENGLISH</button>}
+      {lang ? <button className={style.button} onClick={handleClick}>ESPAÑOL</button> : <button className={style.button} onClick={handleClick}>ENGLISH</button>}
       </div>
     <div className={style.contenedor}>
       {lang ? <div className={style.card}>
