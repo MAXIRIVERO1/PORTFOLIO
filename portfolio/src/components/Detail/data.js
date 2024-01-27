@@ -14,7 +14,8 @@ const db = [
         SPA (Single Page Application) that allows the user to search for recipes, create a recipe, be able to filter by score, type of diet, as well as alphabetical order.
        
         Tech skills: React.js · redux · Sequelize.js · GitHub · Cascading style sheets (CSS) · Node.js · SQL · JavaScript · HTML · Express.js`
-      }
+      },
+      imageName: "food.jpg"
     },
     {
       name : "PORTFOLIO",
@@ -27,7 +28,8 @@ const db = [
         description : `Welcome to my Personal Portfolio!
         In my online corner, I invite you to explore my journey through the world of programming and web development. Here you will find a collection of projects, achievements and experiences that have shaped my path as a Full Stack web developer.
         Tech skills: HTML, CSS, JAVASCRIPT, REACT.`
-      }
+      },
+      imageName: "portfolio.jpg"
     },
     {
       name: "XUL",
@@ -42,7 +44,42 @@ const db = [
         SPA (single page application) in which you can create a user, recover password, manage the reservation of activities, make donations with a paid market, research about Xul Solar, and manage all the functionalities of the page with an administrator profile.
  
         Use technologies such as: HTML, CSS, JAVA SCRIPT, NODE.JS, EXPRESS, SQL, NODEMAILER, GIT, GITHUB, SEQUELIZE, REACT, REDUX`
-      }
+      },
+      imageName: "xul.jpg"
+    },
+    {
+      name: "rickAndMorty",
+      title: "Proyecto del bootcamp de Soy HENRY",
+      description: `Este es el proyecto que debemos hacer en el bootcamp de Soy Henry.
+      
+      SPA (Single Page Application): Contiene desarrollo frontend backend(CRUD completo), base de datos y tambien usa una API externa.
+      
+      Tech skills: Javascript, Html, Css, React, Redux, Node.js, Express, MongoDB y Mongoose.`,
+      english:{
+        title: "Rick and Morty",
+        description: `This is the project we must work on in the Soy Henry bootcamp.
+
+        SPA (Single Page Application): It includes full-stack development (complete CRUD operations) with frontend and backend components, a database, and also utilizes an external API.
+        
+        Tech skills: Javascript, Html, Css, React, Redux, Node.js, Express, MongoDB, and Mongoose.`
+      },
+      imageName: "rickCapture.png"
+    },
+    {
+      name: "notes",
+      title: "Aplicación para tomar notas",
+      description: `Este es un proyecto que he trabajado como parte de un challenge.
+      SPA (Single Page Application): Contiene desarrollo frontend, backend(CRUD completo) y base de datos.
+      Tech skills: Javascript, Html, Css, React, Redux, Node.js, Express, PostgreSQL y Sequelize.`,
+      english:{
+        title: "Notes application",
+        description: `This is a project I've worked on as part of a challenge.
+
+        Key features:
+        SPA (Single Page Application): It includes frontend development, backend (complete CRUD operations), and a database.
+        Tech skills: Javascript, Html, Css, React, Redux, Node.js, Express, PostgreSQL, and Sequelize.`
+      },
+      imageName: "notesCapture.png"
     }
   ]
   export default db;

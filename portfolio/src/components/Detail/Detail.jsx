@@ -15,6 +15,9 @@ function Detail() {
   }
 
   const found = db.find((o) => o.name === project);
+  
+  const imagePath = require(`./images/${found.imageName}`);
+  
 
   return (
     <div className={style.background}>
@@ -25,11 +28,13 @@ function Detail() {
     <div className={style.contenedor}>
       {lang ? <div className={style.card}>
         <h1>{found.english.title}</h1>
+        <img src={imagePath} alt={found.imageName} className={style.img} />
         <p>{found.english.description}</p>
         <p>Thank you for visiting and being part of my journey!</p>
       </div> : 
       <div className={style.card}>
       <h1>{found.title}</h1>
+      <img src={imagePath} alt={found.imageName} className={style.img} />
       <p>{found.description}</p>
       <p>¡Gracias por visitar y ser parte de mi viaje!</p>
       </div>

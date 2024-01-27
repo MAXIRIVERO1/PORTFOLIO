@@ -6,6 +6,8 @@ import portfolio from "./portfolio.jpg"
 import xul from "./xul.jpg"
 import comingsoon from "./comingsoon.jpg"
 import Footer from '../Footer/Footer'
+import RyM from "./rickCapture.png"
+import notes from "./notesCapture.png"
 
 
 function Projects() {
@@ -31,6 +33,18 @@ function Projects() {
         <Link target="_blank" to="https://www.youtube.com/watch?v=BGJdh_8pxvo"><img className={style.img} src={xul} alt="project"/></Link><br/>
         <a className={style.text} target="_blank" href="https://www.youtube.com/watch?v=BGJdh_8pxvo">Check on Youtube</a><br/>
         <Link className={style.text} to={`/detail/XUL`}>Detail</Link>
+      </div>
+
+      <div className={style.card}>
+        <Link target="_blank" to="https://youtu.be/djDfqMMiR6Y"><img className={style.img} src={RyM} alt="rickAndMorty"/></Link><br/>
+        <a className={style.text} target="_blank" href="https://youtu.be/djDfqMMiR6Y">Check on Youtube</a><br/>
+        <Link className={style.text} to={`/detail/rickAndMorty`}>Rick and Morty</Link>
+      </div>
+
+      <div className={style.card}>
+        <Link target="_blank" to="https://youtu.be/OlxFev6mIFM"><img className={style.img} src={notes} alt="notes"/></Link><br/>
+        <a className={style.text} target="_blank" href="https://youtu.be/OlxFev6mIFM">Check on Youtube</a><br/>
+        <Link className={style.text} to={`/detail/notes`}>Notes</Link>
       </div>
 
       <div className={style.card}>
