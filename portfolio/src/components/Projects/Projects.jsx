@@ -43,7 +43,7 @@ function Projects() {
 
       <div className={style.card}>
         <Link target="_blank" to="https://youtu.be/OlxFev6mIFM"><img className={style.img} src={notes} alt="notes"/></Link><br/>
-        <a className={style.text} target="_blank" href="https://youtu.be/OlxFev6mIFM">Check on Youtube</a><br/>
+        <a className={style.text} target="_blank" href="https://notes-gamma-seven.vercel.app">Check on browser</a><br/>
         <Link className={style.text} to={`/detail/notes`}>Notes</Link>
       </div>
 
