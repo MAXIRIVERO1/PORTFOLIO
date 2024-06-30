@@ -6,7 +6,6 @@ function Footer() {
         <footer className={style.footer}>
                 <p>&copy; 2023 Alfredo Maximiliano Castillo. Todos los derechos reservados.</p>
         </footer>
-
     );
 }
 
