@@ -1,12 +1,20 @@
 .footer{
-    background-image: url("../../../programming.jpeg");
+    background-color: rgba(0, 0, 0, 0.679);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
+    text-shadow: 0 0 10px rgb(5, 227, 247);
     color: rgb(5, 227, 247);
     width: auto;
     height: 97px;
-}
-.blackback{
-    background-color: rgba(0, 0, 0, 0.679);
     width: auto;
     height: 77px;
     padding: 20px 5px 0px 5px;
+}
+
+@media (orientation: landscape) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 }

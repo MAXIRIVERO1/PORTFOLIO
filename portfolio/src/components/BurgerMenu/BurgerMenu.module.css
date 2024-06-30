@@ -9,14 +9,16 @@
   }
 .button{
   background-color: rgb(5, 227, 247);
+  border: none;
   border-radius: 8px;
   width: 90%;
   height: 30px;
   cursor: pointer;
-  padding-bottom: 3px;
+  padding-bottom: 1px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
+  box-shadow: 0 0 10px rgb(5, 227, 247);
 }
 .button:hover{
   transition: 0.5s;
@@ -41,6 +43,7 @@
     margin: 3px 10px;
     transition: 1.4s;
     background-color: rgb(5, 227, 247);
+    box-shadow: 0 0 30px rgb(5, 227, 247);
   }
   
   .menu-items {
