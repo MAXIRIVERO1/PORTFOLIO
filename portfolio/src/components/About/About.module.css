@@ -1,16 +1,16 @@
-.background{
-    background-image: url("../../../programming.jpeg");
-}
-
-.back{
+.nav{
     background-color: rgba(0, 0, 0, 0.679);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
     padding-top: 30px;
-    height: 60px;
+    height: 62px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .contenedor{
-    background-image: url("../../../programming.jpeg");
     width: auto;
-    height: 100vh;
+    height: 125vh;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -18,19 +18,24 @@
 }
 .card{
     background-color: rgba(0, 0, 0, 0.771);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
+    text-shadow: 0 0 10px rgb(5, 227, 247);
     border-radius: 10%;
-    color: white;
+    color: rgb(5, 227, 247);
     font-size: 15px;
     width: 55%;
-    height: 90%;
-    margin-top: 20px;
+    height: auto;
+    margin-top: 110px;
+    margin-bottom: 150px;
     padding: 10px;
 }
 .button{
   background-color: rgb(5, 227, 247);
-  width: 100px;
-  height: 30px;
+  box-shadow: 0 0 10px rgb(5, 227, 247);
+  border: none;
   border-radius: 8px;
+  width: 150px;
+  height: 30px;
   cursor: pointer;
   font-weight: bold;
   margin: 0px 5px;
@@ -46,13 +51,13 @@
   .contenedor {
       height: auto;
   }
-  .back{
-    background-color: transparent;
+  .nav{
+    height: 82px;
     padding: 5px 0px;
   }
   .card {
       width: 90%;
-      margin-bottom: 20px;
+      margin-bottom: 100px;
   }
 
   .button {
