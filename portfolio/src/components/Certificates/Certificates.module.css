@@ -1,31 +1,17 @@
-.background{
-    background-image: url("../../../programming.jpeg");
+.nav{
+    background-color: rgba(0, 0, 0, 0.679);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
+    padding-top: 30px;
+    height: 62px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.back{
-    background-color: rgba(0, 0, 0, 0.679);
-    padding-top: 30px;
-    height: 60px;
-}
-.button{
-    background-color: rgb(5, 227, 247);
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100px;
-    height: 30px;
-    font-weight: bold;
-  }
-  .button:hover{
-    transition: 0.5s;
-    background-color: black;
-    color: rgb(5, 227, 247);
-    transform: scaleY(1.5);
-    cursor: pointer;
-  }
 .contenedor {
-    background-image: url("../../../programming.jpeg");
     width: auto;
-    height: 100vh;
+    height: 50vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -34,47 +20,132 @@
     align-items: center;
     color: rgb(94, 252, 194);
     text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
-  
+.back {
+    background-color: rgba(0, 0, 0, 0.679);
+    padding-top: 30px;
+    height: 60px;
+}
+
+.button{
+    background-color: rgb(5, 227, 247);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+.button:hover{
+    transition: 0.5s;
+    background-color: black;
+    color: rgb(5, 227, 247);
+    transform: scaleY(1.5);
+    cursor: pointer;
+}
+
 .card {
+    box-shadow: 0 0 10px rgb(5, 227, 247);
     padding: 10px;
     background-color: rgba(7, 7, 7, 0.634);
-    border: 1px solid #ccc;
     border-radius: 10%;
     transition: transform 0.3s;
     overflow: hidden;
 }
-  
+
 .card:hover {
     transform: scale(1.1);
     background-color: rgba(10, 158, 163, 0.368);
 }
-  
+
 .img {
     border-radius: 10%;
 }
-.backButton {
-    grid-column: 1 / span 3;
+
+.text {
+    color: rgb(5, 227, 247);
+}
+
+.pagination {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
-    height: 5px
-  }
-  .text{
-    color: white
-  }
-  @media screen and (max-width: 768px) {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 250px;
+}
+
+.pagination button {
+    background-color: rgb(5, 227, 247);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.pagination button:hover{
+    transition: 0.5s;
+    background-color: black;
+    color: rgb(5, 227, 247);
+    transform: scaleY(1.5);
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.pageNumber {
+    margin: 0 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+/* .pageNumber:hover{
+    transition: 0.5s;
+    background-color: black;
+    color: rgb(5, 227, 247);
+    transform: scaleY(1.5);
+    cursor: pointer;
+} */
+
+.pageNumber.active {
+    background-color: rgb(5, 227, 247);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
+    color: black;
+    font-weight: bold;
+}
+
+.pageNumber.inactive {
+    background-color: rgba(5, 227, 247, 0.134);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
     .contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        height: 89vh;
+        height: 50vh;
     }
-    .back{
+
+    .back {
         background-color: transparent;
         padding: 5px 0px;
     }
+
     .card {
         width: 90%;
     }
@@ -84,6 +155,7 @@
         height: 30px;
         margin: 5px;
     }
+
     .img {
         border-radius: 10%;
         width: 50px;

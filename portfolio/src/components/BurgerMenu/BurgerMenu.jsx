@@ -18,7 +18,7 @@ function BurgerMenu() {
             </div>
             <ul className={`${style["menu-items"]} ${menuOpen ? style["open"] : ''}`}>
                 <li><Link to={"/about"}><button className={style.button}>About me</button></Link></li>
-                <li><Link to={"/certificates"}><button className={style.button}>CV and Certificates</button></Link></li>
+                <li><Link to={"/certificates"}><button className={style.button}>Certificates</button></Link></li>
                 <li><Link to={"/projects"}><button className={style.button}>Projects</button></Link></li>
                 <li><Link to={"/contact"}><button className={style.button}>Contact info</button></Link></li>
                 <li><Link to={"/skills"}><button className={style.button}>Skills</button></Link></li>
