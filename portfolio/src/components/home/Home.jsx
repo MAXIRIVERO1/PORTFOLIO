@@ -35,7 +35,7 @@ function Home() {
                     <h2>Full Stack Developer💻</h2>
                     <img className={style.img} src={foto} alt="" /><br />
                     <button onClick={copyToClipboard} className={style.buttonCopy}>📞Copy Telephone Number</button>
-                    <a target="_blank" href="https://drive.google.com/file/d/1a5iZiJf17jhb1e-vOWzflKORfQWvPpjC/view?usp=sharing"><button className={style.buttonCopy}>💼Check my CV</button></a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1hZ3_JZiWKg0Yxmgk7mPszC1TxGBSndG2/view?usp=sharing"><button className={style.buttonCopy}>💼Check my CV</button></a>
                 </div>
             </div>
             <Footer></Footer>
