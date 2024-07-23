@@ -1,14 +1,3 @@
-.nav{
-    background-color: rgba(0, 0, 0, 0.679);
-    box-shadow: 0 0 10px rgb(5, 227, 247);
-    padding-top: 30px;
-    height: 62px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
 .contenedor {
     width: auto;
     height: 50vh;
@@ -18,15 +7,9 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
-    color: rgb(94, 252, 194);
     text-align: center;
     margin-top: 120px;
     margin-bottom: 120px;
-}
-.back {
-    background-color: rgba(0, 0, 0, 0.679);
-    padding-top: 30px;
-    height: 60px;
 }
 
 .button{
@@ -139,11 +122,6 @@
         align-items: center;
         justify-content: flex-start;
         height: 50vh;
-    }
-
-    .back {
-        background-color: transparent;
-        padding: 5px 0px;
     }
 
     .card {

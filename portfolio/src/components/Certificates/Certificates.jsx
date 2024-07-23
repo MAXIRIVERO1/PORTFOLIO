@@ -6,6 +6,7 @@ import efSet from "./efSet.jpg";
 import nodeYexpress from "./nodeYexpress.jpg";
 import mongoDB from "./mongoDB.jpg";
 import Footer from '../Footer/Footer';
+import HeaderBack from '../HeaderBack/HeaderBack';
 
 const certificates = [
     {
@@ -63,9 +64,7 @@ const Certificates = () => {
 
     return (
         <div>
-            <div className={style.nav}>
-                <Link to={"/"}><button className={style.button}>BACK</button></Link>
-            </div>
+            <HeaderBack></HeaderBack>
             <div className={style.contenedor}>
                 {currentCertificates.map((cert, index) => (
                     <div key={index} className={style.card}>

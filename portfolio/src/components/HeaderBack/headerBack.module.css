@@ -1,0 +1,29 @@
+.nav{
+    background-color: rgba(0, 0, 0, 0.679);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
+    padding-top: 30px;
+    height: 62px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.button{
+    background-color: rgb(5, 227, 247);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+.button:hover{
+    transition: 0.5s;
+    background-color: black;
+    color: rgb(5, 227, 247);
+    transform: scaleY(1.5);
+    cursor: pointer;
+}

@@ -1,60 +1,135 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from "./Projects.module.css"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import food from "./food.jpg"
 import portfolio from "./portfolio.jpg"
 import xul from "./xul.jpg"
 import comingsoon from "./comingsoon.jpg"
 import Footer from '../Footer/Footer'
+import HeaderBack from '../HeaderBack/HeaderBack'
 import RyM from "./rickCapture.png"
 import notes from "./notesCapture.png"
 
+const projects = [
+    {
+        title: "Foods",
+        img: food,
+        alt: "project",
+        github: "https://github.com/MAXIRIVERO1/FOODS",
+        detail: "/detail/FOODS",
+    },
+    {
+        title: "Portfolio",
+        img: portfolio,
+        alt: "project",
+        github: "https://github.com/MAXIRIVERO1/PORTFOLIO",
+        detail: "/detail/PORTFOLIO",
+    },
+    {
+        title: "Xul",
+        img: xul,
+        alt: "project",
+        youtube: "https://www.youtube.com/watch?v=BGJdh_8pxvo",
+        detail: "/detail/XUL",
+    },
+    {
+        title: "Rick and Morty",
+        img: RyM,
+        alt: "rickAndMorty",
+        youtube: "https://youtu.be/djDfqMMiR6Y",
+        detail: "/detail/rickAndMorty",
+    },
+    {
+        title: "Notes",
+        img: notes,
+        alt: "notes",
+        browser: "https://notes-gamma-seven.vercel.app",
+        detail: "/detail/notes",
+    },
+    {
+        title: "Coming Soon",
+        img: comingsoon,
+        alt: "project",
+    },
+];
+
+
 
 function Projects() {
-  return (
-    <div className={style.background}>
-    <div className={style.back}>
-    <Link to={"/"}><button className={style.button}>BACK</button></Link>
-    </div>
-    <div className={style.contenedor}>
-      <div className={style.card}>
-        <Link target="_blank" to="https://github.com/MAXIRIVERO1/FOODS"><img className={style.img} src={food} alt="project"/></Link><br/>
-        <a className={style.text} target="_blank" href="https://github.com/MAXIRIVERO1/FOODS">Check on GitHub</a><br/>
-        <Link className={style.text} to={`/detail/FOODS`}>Detail</Link>
-      </div>
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 3;
 
-      <div className={style.card}>
-        <Link target="_blank" to="https://github.com/MAXIRIVERO1/PORTFOLIO"><img className={style.img} src={portfolio} alt="project"/></Link><br/>
-        <a className={style.text} target="_blank" href="https://github.com/MAXIRIVERO1/PORTFOLIO">Check on GitHub</a><br/>
-        <Link className={style.text} to={`/detail/PORTFOLIO`}>Detail</Link>
-      </div>
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentProjects = projects.slice(indexOfFirstItem, indexOfLastItem);
+    const totalPages = Math.ceil(projects.length / itemsPerPage);
 
-      <div className={style.card}>
-        <Link target="_blank" to="https://www.youtube.com/watch?v=BGJdh_8pxvo"><img className={style.img} src={xul} alt="project"/></Link><br/>
-        <a className={style.text} target="_blank" href="https://www.youtube.com/watch?v=BGJdh_8pxvo">Check on Youtube</a><br/>
-        <Link className={style.text} to={`/detail/XUL`}>Detail</Link>
-      </div>
+    const handleNextPage = () => {
+        if (currentPage < totalPages) {
+            setCurrentPage(currentPage + 1);
+        }
+    };
 
-      <div className={style.card}>
-        <Link target="_blank" to="https://youtu.be/djDfqMMiR6Y"><img className={style.img} src={RyM} alt="rickAndMorty"/></Link><br/>
-        <a className={style.text} target="_blank" href="https://youtu.be/djDfqMMiR6Y">Check on Youtube</a><br/>
-        <Link className={style.text} to={`/detail/rickAndMorty`}>Rick and Morty</Link>
-      </div>
+    const handlePreviousPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1);
+        }
+    };
 
-      <div className={style.card}>
-        <Link target="_blank" to="https://youtu.be/OlxFev6mIFM"><img className={style.img} src={notes} alt="notes"/></Link><br/>
-        <a className={style.text} target="_blank" href="https://notes-gamma-seven.vercel.app">Check on browser</a><br/>
-        <Link className={style.text} to={`/detail/notes`}>Notes</Link>
-      </div>
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-      <div className={style.card}>
-        <Link ><img className={style.img} src={comingsoon} alt="project"/></Link>
-        <p className={style.text} >New project coming soon...</p>
-      </div>
-    </div>
-    <Footer></Footer>
-    </div>
-  )
+    const renderPageNumbers = () => {
+        const pageNumbers = [];
+        for (let i = 1; i <= totalPages; i++) {
+            pageNumbers.push(
+                <div
+                    key={i}
+                    onClick={() => paginate(i)}
+                    className={`${style.pageNumber} ${currentPage === i ? style.active : style.inactive}`}
+                >
+                    {i}
+                </div>
+            );
+        }
+        return pageNumbers;
+    };
+
+    return (
+        <div>
+            <HeaderBack></HeaderBack>
+            <div className={style.contenedor}>
+                {currentProjects.map((project, index) => (
+                    <div className={style.card} key={index}>
+                        <Link target="_blank" to={project.github || project.youtube || project.browser || "#"}>
+                            <img className={style.img} src={project.img} alt={project.alt} />
+                        </Link><br />
+                        {project.github && (
+                            <a className={style.text} target="_blank" href={project.github}>Check on GitHub</a>
+                        )}
+                        {project.youtube && (
+                            <a className={style.text} target="_blank" href={project.youtube}>Check on Youtube</a>
+                        )}
+                        {project.browser && (
+                            <a className={style.text} target="_blank" href={project.browser}>Check on Browser</a>
+                        )}
+                        <br />
+                        {project.detail && (
+                            <Link className={style.text} to={project.detail}>{project.title}</Link>
+                        )}
+                        {!project.detail && (
+                            <p className={style.text}>{project.title}</p>
+                        )}
+                    </div>
+                ))}
+            </div>
+            <div className={style.pagination}>
+                <button onClick={handlePreviousPage} disabled={currentPage === 1}>Previous</button>
+                {renderPageNumbers()}
+                <button onClick={handleNextPage} disabled={currentPage === totalPages}>Next</button>
+            </div>
+            <Footer></Footer>
+        </div>
+    );
 }
 
-export default Projects
+export default Projects;

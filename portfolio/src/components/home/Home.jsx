@@ -1,7 +1,7 @@
 import React from 'react'
 import foto from "../../assets/perfilPortfolio.jpeg"
 import style from "./home.module.css"
-import BurguerMenu from "../BurgerMenu/BurgerMenu"
+import BurguerMenu from "../BurgerMenu/BurgerMenu.jsx"
 import Swal from 'sweetalert2';
 import Footer from "../Footer/Footer.jsx"
 
