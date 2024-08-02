@@ -96,7 +96,7 @@ function Projects() {
 
     return (
         <div>
-            <HeaderBack></HeaderBack>
+            <HeaderBack path="/"></HeaderBack>
             <div className={style.contenedor}>
                 {currentProjects.map((project, index) => (
                     <div className={style.card} key={index}>
@@ -114,7 +114,7 @@ function Projects() {
                         )}
                         <br />
                         {project.detail && (
-                            <Link className={style.text} to={project.detail}>{project.title}</Link>
+                            <Link className={style.text} to={project.detail}>{project.title + " Detail"}</Link>
                         )}
                         {!project.detail && (
                             <p className={style.text}>{project.title}</p>

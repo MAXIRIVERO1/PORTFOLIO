@@ -64,7 +64,7 @@ const Certificates = () => {
 
     return (
         <div>
-            <HeaderBack></HeaderBack>
+            <HeaderBack path="/"></HeaderBack>
             <div className={style.contenedor}>
                 {currentCertificates.map((cert, index) => (
                     <div key={index} className={style.card}>

@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 import React from 'react'
 
-function HeaderBack() {
+function HeaderBack({path}) {
     return (
         <div className={style.nav}>
-            <Link to={"/"}><button className={style.button}>BACK</button></Link>
+            <Link to={path}><button className={style.button}>BACK</button></Link>
         </div>
     )
 }

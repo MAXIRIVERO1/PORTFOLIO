@@ -1,4 +1,4 @@
-.nav{
+.nav {
     background-color: rgba(0, 0, 0, 0.679);
     box-shadow: 0 0 10px rgb(5, 227, 247);
     padding-top: 30px;
@@ -8,7 +8,8 @@
     left: 0;
     right: 0;
 }
-.contenedor{
+
+.contenedor {
     width: auto;
     height: 125vh;
     display: flex;
@@ -16,7 +17,8 @@
     justify-items: center;
 
 }
-.card{
+
+.card {
     background-color: rgba(0, 0, 0, 0.771);
     box-shadow: 0 0 10px rgb(5, 227, 247);
     /* text-shadow: 0 0 10px rgb(5, 227, 247); */
@@ -29,40 +31,45 @@
     margin-bottom: 150px;
     padding: 10px;
 }
-.button{
-  background-color: rgb(5, 227, 247);
-  box-shadow: 0 0 10px rgb(5, 227, 247);
-  border: none;
-  border-radius: 8px;
-  width: 150px;
-  height: 30px;
-  cursor: pointer;
-  font-weight: bold;
-  margin: 0px 5px;
-}
-.button:hover{
-  transition: 0.5s;
-  background-color: black;
-  color: rgb(5, 227, 247);
-  transform: scaleY(1.5);
-  cursor: pointer;
-}
-@media screen and (max-width: 768px) {
-  .contenedor {
-      height: auto;
-  }
-  .nav{
-    height: 82px;
-    padding: 5px 0px;
-  }
-  .card {
-      width: 90%;
-      margin-bottom: 120px;
-  }
 
-  .button {
-      width: 96%;
-      height: 30px;
-      margin: 5px;
-  }
+.button {
+    background-color: rgb(5, 227, 247);
+    box-shadow: 0 0 10px rgb(5, 227, 247);
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.button:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: rgb(5, 227, 247);
+    transform: scaleY(1.5);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        height: auto;
+    }
+
+    .nav {
+        height: 82px;
+        padding: 5px 0px;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 120px;
+    }
+
+    .button {
+        width: 96%;
+        height: 30px;
+        margin: 5px;
+    }
 }
