@@ -61,20 +61,17 @@
 
 @media screen and (max-width: 768px) {
     .contenedor {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        height: 83.5vh;
+        height: auto;
     }
 
-    .back {
-        background-color: transparent;
+    .nav {
+        height: 82px;
         padding: 5px 0px;
     }
 
     .card {
         width: 90%;
-        height: auto;
+        margin-bottom: 120px;
     }
 
     .button {

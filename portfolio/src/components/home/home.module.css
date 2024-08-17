@@ -19,6 +19,7 @@
   width: 40%;
   height: 30px;
   font-weight: bold;
+  margin: 5px;
 }
 .buttonCopy:hover{
   transition: 0.5s;
@@ -29,7 +30,7 @@
 }
 .contenedor{
     width: auto;
-    height: 135vh;
+    height: 145vh;
     display: flex;
     justify-content: center;
     justify-items: center;

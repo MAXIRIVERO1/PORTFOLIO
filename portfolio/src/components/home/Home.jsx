@@ -35,7 +35,10 @@ function Home() {
                     <h2>Full Stack Developer💻</h2>
                     <img className={style.img} src={foto} alt="" /><br />
                     <button onClick={copyToClipboard} className={style.buttonCopy}>📞Copy Telephone Number</button>
-                    <a target="_blank" href="https://drive.google.com/file/d/1hZ3_JZiWKg0Yxmgk7mPszC1TxGBSndG2/view?usp=sharing"><button className={style.buttonCopy}>💼Check my CV</button></a>
+                    <button onClick={() => window.open("https://drive.google.com/file/d/1hZ3_JZiWKg0Yxmgk7mPszC1TxGBSndG2/view?usp=sharing", "_blank")} className={style.buttonCopy}>💼Check my CV</button>
+                    <button onClick={() => window.open("mailto:maximilianoa.castillorivero@gmail.com", "_blank")} className={style.buttonCopy}>✉️Send Email</button>
+                    <button onClick={() => window.open("https://www.linkedin.com/in/maximiliano-developer", "_blank")} className={style.buttonCopy}>🔗Linkedin Profile</button>
+                    <button onClick={() => window.open("https://github.com/MAXIRIVERO1", "_blank")} className={style.buttonCopy}>🐙GitHub Profile</button>
                 </div>
             </div>
             <Footer></Footer>
