@@ -20,7 +20,7 @@ function Skills() {
     return (
         <div>
             <HeaderBack path="/"></HeaderBack>
-            <h1>Slide it!</h1>
+            <h1 className={style.slideIt}>Slide it!</h1>
             <div>
                 <Slider {...settings} arrows={false}>
                     {skills.map((obj, index) => (

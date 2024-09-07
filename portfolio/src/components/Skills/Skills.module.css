@@ -1,4 +1,4 @@
-h1 {
+.slideIt {
     display: block;
     width: 25%;
     margin: 100px 0px 0 575px;
@@ -7,6 +7,7 @@ h1 {
     box-shadow: 0 0 10px rgb(5, 227, 247);
     background-color: rgba(5, 5, 5, 0.578);
     border-radius: 15px;
+    padding: 10px;
 }
 .card {
     background-color: rgba(5, 5, 5, 0.578);
@@ -33,10 +34,11 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
+    .slideIt {
         width: 50%;
+        margin: 100px 0 0 100px;
     }
     .card {
-        margin-top: 150px;
+        margin-top: 50px;
     }
 }
