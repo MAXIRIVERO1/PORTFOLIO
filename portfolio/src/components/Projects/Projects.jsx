@@ -9,6 +9,8 @@ import Footer from '../Footer/Footer'
 import HeaderBack from '../HeaderBack/HeaderBack'
 import RyM from "./rickCapture.png"
 import notes from "./notesCapture.png"
+import python from "./python.png"
+import api from "./apiProjects.png";
 
 const projects = [
     {
@@ -43,8 +45,50 @@ const projects = [
         title: "Notes",
         img: notes,
         alt: "notes",
-        browser: "https://notes-gamma-seven.vercel.app",
+        youtube: "https://www.youtube.com/watch?v=OlxFev6mIFM",
         detail: "/detail/notes",
+    },
+    {
+        title: "User Management API with FastAPI",
+        img: python,
+        alt: "PythonApi",
+        youtube: "https://www.youtube.com/watch?v=ziJheF4U13w",
+        detail: "/detail/pythonCrud",
+    },
+    {
+        title: "Task Management API",
+        img: api,
+        alt: "apiProjects",
+        youtube: "https://www.youtube.com/watch?v=sIulvqc4cfo",
+        detail: "/detail/taskApi"
+    },
+    {
+        title: "Contact Management API",
+        img: api,
+        alt: "apiProjects",
+        youtube: "https://www.youtube.com/watch?v=06AJaNk1UH0",
+        detail: "/detail/contactApi"
+    },
+    {
+        title: "Product Inventory API",
+        img: api,
+        alt: "apiProjects",
+        youtube: "https://www.youtube.com/watch?v=2Px6ybV44MI",
+        detail: "/detail/productInventory"
+    },
+    {
+        title: "User authentication API",
+        img: api,
+        alt: "apiProjects",
+        youtube: "https://www.youtube.com/watch?v=VQxq8e_hea0",
+        detail: "/detail/userAuthApi"
+    },
+    {
+        title: "Book User authentication API",
+        img: api,
+        alt: "apiProjects",
+        youtube: "https://www.youtube.com/watch?v=EE1KH-moIuw",
+        detail: "/detail/bookUserApi"
     },
     {
         title: "Coming Soon",

@@ -7,6 +7,7 @@ import Footer from "../Footer/Footer.jsx"
 
 function Detail() {
     const { project } = useParams();
+    console.log(project, db[5].name)
     const [lang, setLang] = useState(true)
 
     const handleClick = () => {
@@ -15,7 +16,7 @@ function Detail() {
     }
 
     const found = db.find((o) => o.name === project);
-
+    console.log(found)
     const imagePath = require(`./images/${found.imageName}`);
 
 
